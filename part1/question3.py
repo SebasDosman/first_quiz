@@ -29,19 +29,18 @@
 class Oven(object):
   def __init__(self):
     self.ingredients = []
-    self.temperature = 0
   
   def add(self, item):
     self.ingredients.append(item)
   
   def freeze(self):
-    pass
+    print("Freezing...")
   
   def boil(self):
-    pass
+    print("Boiling...")
   
   def wait(self):
-    pass
+    print("Waiting...")
   
   def get_output(self):
     if "lead" in self.ingredients and "mercury" in self.ingredients:

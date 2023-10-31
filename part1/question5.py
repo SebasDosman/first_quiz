@@ -39,7 +39,7 @@ ALTER TABLE people ADD COLUMN favorite_food_id INTEGER;
 # THe output should be a list of tuples in the format: (<pet name>, <food name>)
 sql_select_all_vegetarian_pets = """
 SELECT animals.name, favorite_foods.name
-FROM animals, favorite_foods
-WHERE animals.favorite_food_id = favorite_foods.food_id
-AND favorite_foods.vegetarian = 1;
+FROM animals
+INNER JOIN favorite_foods ON animals.favorite_food_id = favorite_foods.food_id
+WHERE favorite_foods.vegetarian = 1;
 """

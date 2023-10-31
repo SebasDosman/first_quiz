@@ -1,34 +1,32 @@
-package org.velezreyes.quiz.question6;
+package org.velezreyes.quiz.question6.models.implementations;
+
+import org.velezreyes.quiz.question6.models.Drink;
+
 
 public class DrinkImpl implements Drink {
     private String name;
-    private boolean isFizzy;
+    private boolean fizzy;
     private double price;
 
     public DrinkImpl(String name) {
         this.name = name;
-        this.isFizzy = false;
+        this.fizzy = false;
         this.price = 0;
-    }
-
-    @Override
-    public void setFizzy(boolean isFizzy) {
-        this.isFizzy = isFizzy;
-    }
-
-    @Override
-    public boolean isFizzy() {
-        return this.isFizzy;
-    }
-
-    @Override
-    public void setName(String name) {
-        this.name = name;
     }
 
     @Override
     public String getName() {
         return this.name;
+    }
+
+    @Override
+    public void setFizzy(boolean fizzy) {
+        this.fizzy = fizzy;
+    }
+
+    @Override
+    public boolean isFizzy() {
+        return this.fizzy;
     }
 
     @Override

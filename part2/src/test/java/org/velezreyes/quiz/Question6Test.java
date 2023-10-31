@@ -7,11 +7,12 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
-import org.velezreyes.quiz.question6.Drink;
-import org.velezreyes.quiz.question6.NotEnoughMoneyException;
-import org.velezreyes.quiz.question6.UnknownDrinkException;
-import org.velezreyes.quiz.question6.VendingMachine;
-import org.velezreyes.quiz.question6.VendingMachineImpl;
+import org.velezreyes.quiz.question6.models.Drink;
+import org.velezreyes.quiz.question6.exceptions.NotEnoughMoneyException;
+import org.velezreyes.quiz.question6.exceptions.UnknownDrinkException;
+import org.velezreyes.quiz.question6.models.VendingMachine;
+import org.velezreyes.quiz.question6.models.implementations.VendingMachineImpl;
+
 
 public class Question6Test {
   @Test
