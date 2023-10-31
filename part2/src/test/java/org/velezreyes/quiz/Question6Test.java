@@ -37,7 +37,7 @@ public class Question6Test {
     vm.insertQuarter();
     vm.insertQuarter();
     vm.insertQuarter();
-
+    
     Drink drink = vm.pressButton("ScottCola");
     
     assertTrue(drink.isFizzy());
